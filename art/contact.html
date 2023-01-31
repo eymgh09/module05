@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+  <body style="margin-left: 100px;">
+    <h1> Contact  me</h1>
+    <a href="index.html" style="color:white; background-color:#4b7775; border-radius: 10px;">Back home</a>
+    <p style="margin-bottom: 10px;">Hover on picture</p>
+    <div class="flip-3d">
+      <input type="checkbox" id="zoomCheck">
+  <label for="zoomCheck"></label>
+      <figure>
+        <img src="Images/Screenshot 2022-12-20 at 8.35.18 PM.png " alt style="width: 370px;height: 250px; margin-left: 10px;margin-top: -28px;margin-right: -200px;">
+        <figcaption style="font-size: 1vw;margin-left: 10px;width: 366px;">Photography is the art of capturing images by recording light,time, and physical
+          form. My photography is based on scenes from my daily life, and mostly from my
+         travels. I love to capture the seasonal changing of the landscape, 
+           and nature's elements, and I like to record the energy and atmosphere 
+       that is visually appealing, and sometimes just to have a memory</figcaption>
+      </figure>
+    </div>
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+      <div class="row">
+        <label class="required" for="name">Your name:</label><br />
+        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+        <span id="name_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+        <label class="required" for="email">Your email:</label><br />
+        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+        <span id="email_validation" class="error_message"></span>
+      </div>
+      <div class="row">
+        <label class="required" for="message">Your message:</label><br />
+        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+        <span id="message_validation" class="error_message"></span>
+      </div>
+        
+        <input id="submit_button" type="submit" value="Send email" />
+    </form>
+      
+    <footer style="text-align:center;"margin-top:20px>
+      <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+    </footer>
+    <p id="myinfo"><a href="arthelver.com" style="color: white; text-align: center;" >artepuquio@gmail.com</a>-Author: Elver Yarin <br><br></p>
+    
+    <script src="app.js"></script> 
+  </body>
+</html>
